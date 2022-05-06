@@ -7,5 +7,5 @@
  ```kubectl create -f dat_deploy_redis.yaml``` <br>
  ```kubectl create -f dat_service_redis.yaml``` <br>
 #### Web app
-``` kubectl create -f dat_webapp.yaml``` 
+``` kubectl create -f dat_webapp.yaml```<br> 
 ``` kubectl create -f dat_webapp_service.yaml```<br>
