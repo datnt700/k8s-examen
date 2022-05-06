@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dat-redis-deployment
+  labels:
+    app: dat-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dat-redis
+  template:
+    metadata:
+      labels:
+        app: dat-redis
+    spec:
+      containers:
+      - name: dat-redisdb
+        image: redis:latest
+        ports:
+        - containerPort: 6379

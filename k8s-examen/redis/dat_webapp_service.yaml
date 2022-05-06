@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dat-node-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: dat-node
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 6379
+      nodePort: 32345
