@@ -5,7 +5,7 @@
 ### Command
 #### Database redis:
  ```kubectl create -f dat_deploy_redis.yaml``` <br>
- ```inline code`kubectl create -f dat_service_redis.yaml``` <br>
+ ```kubectl create -f dat_service_redis.yaml``` <br>
 #### Web app
-```inline code` kubectl create -f dat_webapp.yaml```<br>  
-```inline code` kubectl create -f dat_webapp_service.yaml```<br>
+``` kubectl create -f dat_webapp.yaml```<br>  
+``` kubectl create -f dat_webapp_service.yaml```<br>
